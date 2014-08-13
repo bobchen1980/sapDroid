@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">空间音效演示</string>
+    <string name="action_settings">网络配置</string>
+    <string name="drawer_open">打开</string>
+    <string name="drawer_close">关闭</string>
+    <string name="connect">连接</string>
+    <string name="save">保存配置</string>
+    <string name="reconnect">强制重连</string>
+    <string name="forceSync">强制同步</string>
+
+    <string name="syncSongs">正在同步歌曲</string>
+    
+    <string name="ex_music">音乐环绕</string>
+    <string name="ex_spot">现场直播</string>
+    <string name="ex_movie">电影环绕</string>
+
+    <string name="settingsServerHeading">流媒体服务器</string>
+    <string name="settingsServer">http://server:port</string>
+    <string name="settingsUserHeading">流媒体用户</string>
+    <string name="settingsUser">Username</string>
+    <string name="settingsPassword">Password</string>
+    <string name="settingsExpireText">流媒体服务会话保存至（过期请重连）</string>
+    
+    <string name="settingsEffect">播放列表</string>
+
+    <string-array name="menu_array">
+        <item>播放列表</item>
+        <item>歌名列表</item>
+        <item>歌手列表</item>
+        <item>专辑列表</item>
+        <item>远程列表</item>
+        <item>网络配置</item>
+        <item>帮助说明</item>
+    </string-array>
+
+</resources>

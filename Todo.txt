@@ -1,0 +1,2 @@
+1. Audiotrack cache play
+2. Chinese supported

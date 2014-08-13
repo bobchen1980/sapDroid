@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/app_name"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/playNow_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_weight="0.22"
+        android:fastScrollEnabled="true" />
+
+    
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:baselineAligned="true"
+        android:fitsSystemWindows="true"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal" >
+
+        
+        <TextView
+            android:id="@+id/playNow_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textSize="25sp" />
+        
+        <com.raptureinvenice.webimageview.image.WebImageView
+            android:id="@+id/playNow_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:adjustViewBounds="true" />        
+
+    </LinearLayout>
+        
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.01"
+        android:gravity="right|center_vertical" >
+ 
+        <TextView
+            android:id="@+id/playNow_duration_current"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp" />       
+       
+        <SeekBar
+            android:id="@+id/playNow_seekbar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" 
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+
+        <TextView
+            android:id="@+id/playNow_duration"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true"
+        android:fitsSystemWindows="true"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/playlist_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_pre"
+            android:contentDescription="@string/app_name" />
+                
+        <ImageButton
+            android:id="@+id/playlist_play"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_play"
+            android:contentDescription="@string/app_name" />
+
+        <ImageButton
+            android:id="@+id/playlist_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_stop"
+            android:contentDescription="@string/app_name" />
+        
+        <ImageButton
+            android:id="@+id/playlist_next"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_next"
+            android:contentDescription="@string/app_name" />        
+
+        <ImageButton
+            android:id="@+id/playlist_effect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_audio"
+            android:contentDescription="@string/app_name"
+            android:scaleType="center" />
+
+    </LinearLayout>
+
+   <LinearLayout
+       android:id="@+id/effect_layout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:baselineAligned="true"
+       android:fitsSystemWindows="true"
+       android:gravity="right"
+       android:orientation="horizontal"
+       android:visibility="gone" >
+
+	<RadioGroup android:id="@+id/effect_radio" 
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+		    
+		    <RadioButton android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content" 
+		        android:id="@+id/radio_small" 
+		        android:text="@string/ex_music" 
+		        android:checked="true"></RadioButton>
+		    <RadioButton android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content" 
+		        android:id="@+id/radio_medium"
+		         android:text="@string/ex_spot"></RadioButton>    
+		    <RadioButton android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content" 
+		        android:id="@+id/radio_large"
+		         android:text="@string/ex_movie"></RadioButton>     
+         
+		</RadioGroup>              
+
+    </LinearLayout>    
+</LinearLayout>
